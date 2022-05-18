@@ -8,4 +8,5 @@ up:
 	&& kubectl apply -f k8s/service.yaml \
 	&& kubectl apply -f k8s/metrics-server.yaml \
 	&& kubectl apply -f k8s/hpa.yaml \
+	&& kubectl apply -f k8s/pvc.yaml \
 	&& kubectl apply -f k8s/deployment.yaml && watch -n1 kubectl get pods
